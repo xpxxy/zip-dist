@@ -1,5 +1,5 @@
 {
-  "name": "zipdist",
+  "name": "@xpxxy/zip-dist",
   "description": "A tool to zip the build files in the dist directory",
   "keywords": ["zip", "dist", "zipper"],
   "homepage": "https://github.com/xpxxy/zip-dist",
@@ -14,6 +14,9 @@
   "type": "module",
   "bin": {
     "zip-dist": "bin/zip-dist.js"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "dependencies": {
     "archiver": "^7.0.0"

@@ -1,5 +1,11 @@
 # zip-dist
-### Usage:
+
+### Install
+```bash
+npm i -g @xpxxy/zip-dist
+```
+
+### Usage
 ```bash
 zip-dist <input>
 ```
