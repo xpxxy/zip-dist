@@ -67,7 +67,7 @@ function zip(input, opts) {
   // 避免“输出 zip 在输入目录内”导致把 zip 自己也压进去，从而卡住/异常
   const tmpFile = path.join(
     os.tmpdir(),
-    `dist-zipper-${Date.now()}-${Math.random().toString(16).slice(2)}.zip`
+    `zip-dist-${Date.now()}-${Math.random().toString(16).slice(2)}.zip`
   );
   const output = fs.createWriteStream(tmpFile);
 
@@ -145,7 +145,7 @@ function zip(input, opts) {
 function printHelp() {
   console.log(`
 Usage:
-  dist-zipper <input>
+  zip-dist <input>
 
 Options:
   -o, --output <dir>    输出目录（默认：当前目录）

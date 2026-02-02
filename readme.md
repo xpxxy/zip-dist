@@ -1,7 +1,7 @@
-# dist-zipper
+# zip-dist
 ### Usage:
 ```bash
-dist-zipper <input>
+zip-dist <input>
 ```
 ### Options: 
 ```bash 
