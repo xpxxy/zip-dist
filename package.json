@@ -2,18 +2,18 @@
   "name": "dist-zipper",
   "description": "A tool to zip the dist directory",
   "keywords": ["zip", "dist", "zipper"],
-  "homepage": "https://github.com/xpxxy/zip-dist",
+  "homepage": "https://github.com/xpxxy/dist-zipper",
   "repository": {
     "type": "git",
-    "url": "https://github.com/xpxxy/zip-dist.git"
+    "url": "https://github.com/xpxxy/dist-zipper.git"
   },
   "bugs": {
-    "url": "https://github.com/xpxxy/zip-dist/issues"
+    "url": "https://github.com/xpxxy/dist-zipper/issues"
   },
   "version": "0.1.0",
   "type": "module",
   "bin": {
-    "zip-dist": "bin/zip-dist.js"
+    "dist-zipper": "bin/dist-zipper.js"
   },
   "dependencies": {
     "archiver": "^7.0.0"
