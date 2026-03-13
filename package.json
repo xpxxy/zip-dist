@@ -1,28 +1,59 @@
 {
   "name": "@xpxxy/zip-dist",
-  "description": "A tool to zip the build files in the dist directory",
-  "keywords": ["zip", "dist", "zipper"],
+  "version": "0.1.0",
+  "description": "A CLI tool to archive dist or custom folders quickly",
+  "keywords": [
+    "7z",
+    "cli",
+    "dist",
+    "tar",
+    "zip",
+    "zipper"
+  ],
   "homepage": "https://github.com/xpxxy/zip-dist",
+  "bugs": {
+    "url": "https://github.com/xpxxy/zip-dist/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "xpxxy"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/xpxxy/zip-dist.git"
   },
-  "bugs": {
-    "url": "https://github.com/xpxxy/zip-dist/issues"
-  },
-  "version": "0.1.0",
-  "type": "module",
   "bin": {
-    "zip-dist": "bin/zip-dist.js"
+    "zip-dist": "bin/zip-dist.cjs"
   },
+  "files": [
+    "bin",
+    "lib",
+    "readme.md",
+    "readme.en.md"
+  ],
+  "type": "module",
   "publishConfig": {
     "access": "public"
   },
+  "scripts": {
+    "build": "tsdown",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "oxlint",
+    "lint:fix": "oxlint --fix",
+    "fmt": "oxfmt --check",
+    "fmt:fix": "oxfmt --write",
+    "test": "npm run build && node --test test/*.test.js"
+  },
   "dependencies": {
+    "7zip-bin": "^5.2.0",
     "archiver": "^7.0.0"
   },
-  "author": {
-    "name": "xpxxy"
-  },
-  "license": "MIT"
+  "devDependencies": {
+    "@types/archiver": "^7.0.0",
+    "@types/node": "^24.3.0",
+    "oxfmt": "^0.36.0",
+    "oxlint": "^1.51.0",
+    "tsdown": "^0.21.1",
+    "typescript": "^5.9.2"
+  }
 }
