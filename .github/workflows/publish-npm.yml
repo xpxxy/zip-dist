@@ -3,22 +3,18 @@ name: Publish to npm
 on:
   release:
     types: [published]
-  # 也可在推送 tag 时发布，取消下面注释并注释掉上面的 release 块即可
-  # push:
-  #   tags:
-  #     - 'v*'
 
 jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6 # Updated from v4
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6 # Updated from v4
         with:
-          node-version: '20'
+          node-version: '22' # Recommended: Move to Node 22 or 24 LTS
           registry-url: 'https://registry.npmjs.org'
 
       - name: Install dependencies
