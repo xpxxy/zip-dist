@@ -1,5 +1,5 @@
 # zip-dist
-
+[![NPM](https://nodei.co/npm/@xpxxy/zip-dist.svg?style=shields&data=n,v,u,d,s&color=brightgreen)](https://nodei.co/npm/@xpxxy/zip-dist/)
 ### Docs
 
 [CN](./readme.md) | [EN](./readme.en.md)
